@@ -12,7 +12,24 @@ namespace Hana {
     public class MvcApplication : System.Web.HttpApplication {
         public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
+              "who",                                              // Route name
+              "who",                           // URL with parameters
+              new { controller = "Home", action = "who", id = "" }  // Parameter defaults
+          );           
+            routes.MapRoute(
+               "contact",                                              // Route name
+               "contact",                           // URL with parameters
+               new { controller = "Home", action = "contact", id = "" }  // Parameter defaults
+           );
 
+            
+            
+            routes.MapRoute(
+                "resume",                                              // Route name
+                "resume",                           // URL with parameters
+                new { controller = "Home", action = "Resume", id = "" }  // Parameter defaults
+            );
             routes.MapRoute(
                 "Default",                                              // Route name
                 "{controller}/{action}/{id}",                           // URL with parameters

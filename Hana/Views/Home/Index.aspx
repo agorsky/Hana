@@ -23,10 +23,9 @@
     <!-- BEGIN THREE AT RIGHT -->
     <div class="column span-8 last">
         <div id="home_right">
-            <h3>
-                Previously Featured</h3>
-            <!--END THREE POSTS AT RIGHT-->
-            <!-- ABOUT BOX -->
+            <h3>Previously Featured</h3>
+                <!--END THREE POSTS AT RIGHT-->
+                <!-- ABOUT BOX -->
             <div class="box">
                 <h6>
                     About
@@ -39,8 +38,7 @@
                 <h6>
                     Advertise with
                 </h6>
-                <h1>
-                    ADVERTISE</h1>
+                <h1>ADVERTISE</h1>
             </div>
         </div>
     </div>

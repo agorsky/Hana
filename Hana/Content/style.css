@@ -164,10 +164,12 @@ h2 a
 /* HEADER */
 #header
 {
-	width: 950px;
-	padding: 4px 0 4px 0;
-	border-bottom: 2px solid #808080;
-	margin-bottom:16px;
+    width: 950px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    border-bottom-style: double;
+    border-bottom-width: 3px;
+    border-bottom-color: #e5e5e5;
 }
 #header h1, #header .description
 {
@@ -198,12 +200,37 @@ h2 a
 	background: #333;
 	color: #FFF;
 }
+
+/* MENU */
+#menu
+{
+    position: absolute;
+    top: 2px;
+    right: 172px;
+    height: 32px;
+    font-variant: small-caps;
+}
+
+.menu-item{
+    padding:8px;
+    border-right:1px solid #e5e5e5;
+    display:inline;
+}
+
+.menu-item-last{
+    padding:16px;
+    display:inline;
+}
+
 /* FOOTER */
 #footer
 {
 	text-align: center;
-	font-size: .9em;
+	font-size: .8em;
+    color:#ccc;
 	margin: 0;
+	border-top:1px solid #e5e5e5;
+	padding-top:16px;
 }
 #footer a { text-decoration: none; }
 /* SEARCH */

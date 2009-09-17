@@ -30,6 +30,7 @@ body { font-size: 75%; }
 body { 
   color: #222; 
   font-family: "Georgia", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif; 
+  font-size:0.9em;
 }
 h1,h2,h3,h4,h5,h6 { 
   color: #111; 
@@ -102,7 +103,7 @@ table .last { padding-right: 0; }
 -------------------------------------------------------------- */
 
 .small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
-.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.large      { font-size: 1.2em;}
 .quiet      { color: #ccc; }
 
 .hide       { display: none; }
@@ -114,4 +115,13 @@ table .last { padding-right: 0; }
 .top        { margin-top:0; padding-top:0; }
 .bottom     { margin-bottom:0; padding-bottom:0; }
 
+.quote
+{
+    font-style: italic;
+    color: #999999;
+    border-bottom:1px solid #e5e5e5;
+    margin-bottom:16px;
+    padding:10px;
+}
 
+.section-head {border-bottom:1px dashed #ccc;margin-bottom:5px;font-weight:bold}
