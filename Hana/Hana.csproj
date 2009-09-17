@@ -67,10 +67,33 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\lib\forms.css" />
+    <Content Include="Content\css\lib\grid.css" />
+    <Content Include="Content\css\lib\ie.css" />
+    <Content Include="Content\css\lib\reset.css" />
+    <Content Include="Content\css\lib\typography.css" />
+    <Content Include="Content\css\plugins\buttons\buttons.css" />
+    <Content Include="Content\css\plugins\buttons\icons\cross.png" />
+    <Content Include="Content\css\plugins\buttons\icons\key.png" />
+    <Content Include="Content\css\plugins\buttons\icons\tick.png" />
+    <Content Include="Content\css\plugins\css-classes\css-classes.css" />
+    <Content Include="Content\css\plugins\fancy-type\fancy-type-compressed.css" />
+    <Content Include="Content\css\plugins\fancy-type\fancy-type.css" />
+    <Content Include="Content\css\print.css" />
+    <Content Include="Content\css\screen.css" />
+    <Content Include="Content\images\icons\feed.png" />
+    <Content Include="Content\images\icons\feed_small.png" />
+    <Content Include="Content\images\icons\li.png" />
+    <Content Include="Content\images\icons\search_grey.gif" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\quote.png" />
+    <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\dhtml.js" />
+    <Content Include="Scripts\functions.js" />
+    <Content Include="Scripts\pngfix.js" />
     <Content Include="Web.config" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.3.2.js" />
     <Content Include="Scripts\jquery-1.3.2.min.js" />
     <Content Include="Scripts\jquery-1.3.2-vsdoc.js" />
@@ -89,6 +112,11 @@
     <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\css\plugins\buttons\Readme" />
+    <None Include="Content\css\plugins\css-classes\Readme" />
+    <None Include="Content\css\plugins\fancy-type\Readme" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,496 @@
+/*
+Theme Name: Gridline Magazine
+Theme URI: http://www.graphpaperpress.com/
+Description: A Wordpress magazine theme based on the Blueprint CSS Framework.
+Version: 1.1
+Author: Thad Allender for Graph Paper Press
+Author URI: http://www.graphpaperpress.com/
+Credits: http://code.google.com/p/blueprintcss/
+*/
+
+/* IMPORTANT - PLEASE READ
+This theme uses the Blueprint CSS framework for
+default positioning, typography, form styling, etc.
+The styles below are specific for this theme
+only.  Feel free to edit them as necessary.  Generally
+speaking, you will will likely never need to edit
+the Blueprint CSS stylesheets, which are located in:
+wp-content/themes/name-of-this-theme/css/
+*/
+
+body
+{
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+#outside { background: url('/content/images/get.png') top left no-repeat; }
+blockquote
+{
+	font-style: normal;
+	padding: 0 0 0 0;
+	color: #000;
+	background: url('/content/images/quote.png') .5em top no-repeat;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #000; }
+a
+{
+	color: #FF3706;
+	text-decoration: none;
+}
+a:active, h2 a:active, h3 a:active
+{
+	color: #8c1b00;
+	text-decoration: none;
+}
+a:hover, h2 a:hover, h3 a:hover
+{
+	color: #464646;
+	text-decoration: none;
+}
+blockquote p { padding: 0 20px 0 30px; }
+hr
+{
+	background: #CCC;
+	height: 1px;
+}
+img { margin: 0; }
+.photo_align_left
+{
+	float: left;
+	padding: 0 1.5em 1.5em 0;
+}
+a.button { float: left; }
+/* Fix for buttons */
+input
+{
+	padding-left: 0;
+	border: 1px solid #CCCCCC;
+}
+ol { margin-left: 35px; }
+label { font-weight: normal; }
+textarea
+{
+	height: 200px;
+	width: 500px;
+}
+.small { font-size: .9em; }
+.nomargin { margin: 0; }
+a.button, button { font-weight: normal; }
+dl.small dd { font-size: .9em; }
+span.meta_align_right
+{
+	color: #ccc;
+	font-size: .6em;
+	float: right;
+}
+span.meta_align_right a { color: #ccc; }
+span.meta_align_right a:hover { color: #000; }
+.meta
+{
+	color: #ccc;
+	font-size: .8em;
+	line-height: 1.875em;
+	font-family: Georgia;
+}
+.meta a { color: #ccc; }
+.meta a:hover { color: #000; }
+.byline
+{
+	color: #ccc;
+	font-size: .8em;
+	line-height: 1.875em;
+}
+.byline a
+{
+	color: #FF3706;
+	text-decoration: none;
+	line-height: 1.875em;
+}
+.byline a:hover { color: #000; }
+.five_posts h6 a, .five_posts h4 a, .five_posts h3 a
+{
+	text-decoration: none;
+	margin-bottom: 0;
+}
+#maincontent h2
+{
+	color: #3B4A25;
+	border-bottom: 1px dotted #AAA;
+	margin-bottom: 15px;
+}
+h2 a
+{
+	color: #3B4A25;
+	text-decoration: none;
+}
+#maincontent .post h2 { margin-bottom: 5px; }
+#maincontent .content { padding: 25px 30px 20px 48px; }
+#feature h3
+{
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#feature p img { margin: 7px 0 2em 0; }
+.feature_text { margin-top: 2em; }
+#feature h3{margin-bottom:16px;}
+
+
+#home_right { padding: 0; }
+#home_right .entry { padding: 0 0 2em 0; }
+.author
+{
+	padding: 1.5em;
+	margin-bottom: 1.5em;
+	background: #eee;
+}
+.author img
+{
+	float: left;
+	padding: 0 1em 1em 0;
+}
+.author p { margin-left: 8em; }
+.author h6
+{
+	margin-left: 7em;
+	border-bottom: 1px #000 dotted;
+}
+.navigation, 
+.navigation a { color: #AAA; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.post { margin-bottom: 25px; }
+.entry { padding-bottom: 25px; }
+/* HEADER */
+#header
+{
+	width: 950px;
+	padding: 4px 0 4px 0;
+	border-bottom: 2px solid #808080;
+	margin-bottom:16px;
+}
+#header h1, #header .description
+{
+	padding: 0;
+	margin: 0;
+	line-height: 1em;
+}
+/* NAVIGATION IN POSTS */
+.entry #nav .content
+{
+	padding: 0;
+	margin: auto;
+}
+.entry #nav
+{
+	margin-bottom: 15px;
+	background: #FFF;
+}
+.entry #nav li a
+{
+	color: #FFF;
+	border-right: 1px solid #AAA;
+	background: #666;
+}
+.entry #nav li.last a { border-right: none; }
+.entry #nav li a:hover
+{
+	background: #333;
+	color: #FFF;
+}
+/* FOOTER */
+#footer
+{
+	text-align: center;
+	font-size: .9em;
+	margin: 0;
+}
+#footer a { text-decoration: none; }
+/* SEARCH */
+#search { float: right; }
+#search #s
+{
+	background: transparent url('/content/images/icons/search_grey.gif') 0px center no-repeat;
+	padding: 2px 0 2px 17px;
+	width: 135px;
+	color: #CCCCCC;
+	font-size: 0.9em;
+	margin-right: 0px;
+	margin-top: 10px;
+}
+#search #s:hover { color: #000; }
+.search-excerpt { margin: 0; }
+/* COMMENTS */
+.commentlist li { padding: 8px 15px; }
+.comments-alt { background: #EEE; }
+/* LISTS */
+.bottombar { }
+.bottombar h2
+{
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 1em 0 1em;
+}
+ul
+{
+	list-style-type: none;
+	margin-left: 1em;
+	padding: 0;
+}
+ul li
+{
+	list-style-image: url('/content/images/icons/li.png');
+	background-repeat: no-repeat;
+	border-top: 1px dotted #e5e5e5;
+	line-height: 2em;
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+ul li a { color: #666; }
+/* COMMENT STYLES */
+#comments { width: 100%; }
+dl#comment_list { margin: 0 0 0 0; }
+dl#comment_list dt
+{
+	padding: 0 0 33px 0;
+	background: url('/content/images/comment_top.gif') 0 100% no-repeat;
+	font-size: 1.1em;
+	line-height: 1.8182em;
+	color: #999;
+}
+dl#comment_list dt.author { background: url('/content/images/comment_author_top.gif') 0 100% no-repeat; }
+dl#comment_list dt .comment_num { padding: 0 0.3636em 0 0; }
+dl#comment_list dt .comment_num a, dl#comment_list dt .comment_num a:visited { color: #999; }
+dl#comment_list dt .comment_num a:hover { color: #a90000; }
+dl#comment_list dt strong
+{
+	font-size: 1.4545em;
+	color: #000;
+}
+dl#comment_list dt strong a, dl#comment_list dt strong a:visited
+{
+	color: #000;
+	border-bottom: 1px dotted #999;
+}
+dl#comment_list dt strong a:hover
+{
+	color: #000;
+	border-bottom: 1px solid #a90000;
+}
+dl#comment_list dd
+{
+	padding: 20px;
+	margin: 0 0 1.5385em;
+	background: #dfdfdf;
+}
+dl#comment_list dd.author { background: #0099cc url('/content/images/comment_author_bottom.gif') 0 100% no-repeat; }
+dl#comment_list dd.entry p, dl#comment_list dd.entry ul, dl#comment_list dd.entry ol, dl#comment_list dd.entry blockquote { margin-bottom: 1.1538em; }
+/* COMMENT FORM */
+#comment_form
+{
+	width: 46.8em;
+	margin: 0 0 4.0em 0;
+}
+#comment_form a:hover { text-decoration: underline; }
+#comment_form p { padding: 0.7692em 0; }
+#comment_form label
+{
+	padding: 0 0 0 0.83333em;
+	font-size: 1.2em;
+}
+#comment_form .text_input
+{
+	width: 15.3846em;
+	padding: 0.23077em;
+	color: #a90000;
+	font: bold 1.3em Verdana, sans-serif;
+	border-top: 0.15385em solid #999;
+	border-left: 0.15385em solid #999;
+	border-right: 0.07692em solid #eee;
+	border-bottom: 0.07692em solid #eee;
+}
+#comment_form .text_input:focus
+{
+	border-top-color: #666;
+	border-left-color: #666;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+}
+#comment_form .text_area { width: 32.9231em; }
+#comment_form p.subscribe-to-comments { font-size: 1.3em; }
+#comment_form p.subscribe-to-comments label { font-size: 1.0em; }
+#comment_form .form_submit
+{
+	padding: 0.5em;
+	background: url('/content/images/submit_bg.gif') repeat-x;
+	color: #000;
+	border: 0.21429em double #999;
+	border-top-color: #ccc;
+	border-left-color: #ccc;
+	font: bold 1.4em/1.0em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	cursor: pointer;
+}
+#comment_form .form_submit:hover { color: #0099cc; }
+/* Root = Horizontal, Secondary = Vertical */
+#navmenu-h { background: #000; }
+#navmenu-h li.alignright { float: right; }
+ul#navmenu-h
+{
+	margin: 0 0 1em 0;
+	border: 0 none;
+	padding: 0;
+	width: 950px;
+	/*For KHTML*/
+	list-style: none;
+	height: 24px;
+}
+ul#navmenu-h li
+{
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	float: left;
+	/*For Gecko*/
+	display: inline;
+	list-style: none;
+	position: relative;
+	height: 24px;
+}
+ul#navmenu-h ul
+{
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	width: 160px;
+	list-style: none;
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 0;
+}
+ul#navmenu-h ul:after /*From IE 7 lack of compliance*/
+{
+	clear: both;
+	display: block;
+	font: 1px/0px serif;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+ul#navmenu-h ul li
+{
+	width: 160px;
+	float: left;
+	/*For IE 7 lack of compliance*/
+	display: block !important;
+	/*For IE*/
+}
+/* Root Menu */
+ul#navmenu-h a
+{
+	padding: 2px 20px 0 20px;
+	float: none !important;
+	/*For Opera*/
+	/*For IE*/
+	display: block;
+	background: #000;
+	color: #ccc;
+	font: 11px/22px Helvetica;
+	text-decoration: none;
+	height: auto !important;
+	/*For IE*/
+}
+/* Root Menu Hover Persistence */
+ul#navmenu-h a:hover,
+ul#navmenu-h li:hover a,
+ul#navmenu-h li.iehover a
+{
+	background: #333;
+	color: #FFF;
+}
+/* 2nd Menu */
+ul#navmenu-h li:hover li a,
+ul#navmenu-h li.iehover li a
+{
+	float: none;
+	background: #000;
+	color: #ccc;
+}
+/* 2nd Menu Hover Persistence */
+ul#navmenu-h li:hover li a:hover,
+ul#navmenu-h li:hover li:hover a,
+ul#navmenu-h li.iehover li a:hover,
+ul#navmenu-h li.iehover li.iehover a
+{
+	background: #333;
+	color: #FFF;
+}
+/* 3rd Menu */
+ul#navmenu-h li:hover li:hover li a,
+ul#navmenu-h li.iehover li.iehover li a
+{
+	background: #000;
+	color: #ccc;
+}
+/* 3rd Menu Hover Persistence */
+ul#navmenu-h li:hover li:hover li a:hover,
+ul#navmenu-h li:hover li:hover li:hover a,
+ul#navmenu-h li.iehover li.iehover li a:hover,
+ul#navmenu-h li.iehover li.iehover li.iehover a
+{
+	background: #CCC;
+	color: #FFF;
+}
+/* 4th Menu */
+ul#navmenu-h li:hover li:hover li:hover li a,
+ul#navmenu-h li.iehover li.iehover li.iehover li a
+{
+	background: #EEE;
+	color: #666;
+}
+/* 4th Menu Hover */
+ul#navmenu-h li:hover li:hover li:hover li a:hover,
+ul#navmenu-h li.iehover li.iehover li.iehover li a:hover
+{
+	background: #CCC;
+	color: #FFF;
+}
+ul#navmenu-h ul ul,
+ul#navmenu-h ul ul ul
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 160px;
+}
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#navmenu-h li:hover ul ul,
+ul#navmenu-h li:hover ul ul ul,
+ul#navmenu-h li.iehover ul ul,
+ul#navmenu-h li.iehover ul ul ul { display: none; }
+ul#navmenu-h li:hover ul,
+ul#navmenu-h ul li:hover ul,
+ul#navmenu-h ul ul li:hover ul,
+ul#navmenu-h li.iehover ul,
+ul#navmenu-h ul li.iehover ul,
+ul#navmenu-h ul ul li.iehover ul { display: block; }
+#themes h6
+{
+	float: right;
+	padding-right: 1em;
+}
+ul#themeswitcher
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+ul#themeswitcher li
+{
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
