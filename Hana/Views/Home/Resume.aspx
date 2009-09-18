@@ -185,6 +185,10 @@
     </div>
     <div class="column span-8 last">
         <div id="home_right">
+            <div >
+                <img src="/content/images/headshot.jpg" />
+            </div>
+            
             <p class="quote">
                 You're so awesome I just can't hug you enough!<br />
                 -<b>Miguel De Icaza</b>, Creator of GNOME

@@ -22,16 +22,23 @@
     If you would like to send me a message directly, please fill out the form below and it will be sent electronically
     to my current physical location, and merged into my psyche by the mischevous electrons under my employ.
     
+    <div style="width:620px;">
     <div style="margin-top:16px"><img src="/content/images/dear.png" /></div>
-    <textarea style="font-family:Georgia;font-size:1.6em;color: black; background-color: transparent;width:65%; height:250px" name="message"></textarea>
+    <div style="float:right">
+        <input type="image" src="/content/images/stamp.jpg" alt="lick and send" style="border:0px"/>
+    
+    </div>
+    <textarea style="font-family:Georgia;font-size:1.6em;color: black; background-color: transparent;width:420px; height:250px" name="message"></textarea>
     <div>
         <img src="/content/images/regards.png" />
         
+    </div>
+    
+    
     </div>
     <p>
     <input type="text" name="from" style="font-family:Georgia;font-size:1.6em;width:243px"/> <br />
     </p>
     <p>
-    <input type="image" src="/content/images/stamp.jpg" alt="lick and send" style="border:0px"/>
     </p>
 </asp:Content>

@@ -15,7 +15,7 @@
     <script type="text/javascript" src="/scripts/jquery-1.3.2.js"></script>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
 	<style type="text/css">
-    /*		.container { background: url(http://localhost/boppy/wp-content/themes/gridlines/css/lib/img/grid.png); }*/
+    
 	</style>
 </head>
 
@@ -24,16 +24,28 @@
 <div class="container">
 
     <!-- Header -->
-    <div  id="header">
-        <!-- Site Name -->
-        <a href="/" title="" class="logo">
-            <img alt="" src="/content/images/logo2.png" /></a>
+    <div class="column span-24" id="elhead">
+        <div class="column span-6 " style="padding-top:68px;padding-left:42px;">
+             <a href="/contact">
+                <img src="/content/images/contact.png" />
+            </a>
+        </div>
+         <div class="column span-10 " style="text-align:center">
+           <a href="/" title="" class="logo">
+                <img alt="" src="/content/images/logo2.png" /></a>
+         
+         </div>
+         <div class="column span-6 last" style="text-align:right; padding-top:60px;" >        
+                 <a href="http://feeds.feedburner.com/wekeroad/EeKc" target="_blank">
+            <img src="/content/images/subscribe.png" />
+            </a>
+       </div>
     </div>
-    <div id="ribbon">
-        <div class="ribbon-text">Volume 111</div>
-        <div class="ribbon-text" style="text-align:center;margin-left:152px;margin-right:62px;">Hanalei, Hawaii <%=DateTime.Now.ToLongDateString() %></div>
-        <div class="ribbon-text">198 Posts, 2020 Comments</div>
-        
+    
+    <div class="column span-24" id="ribbon">
+        <div class="column span-7">Volume 111</div>
+        <div class="column span-10 " style="text-align:center">Hanalei, Hawaii <%=DateTime.Now.ToLongDateString() %></div>
+        <div class="column span-6  alignright last" >183 Posts, 2100 Comments</div>
     </div>
 
     
@@ -45,14 +57,9 @@
     </div>
 
      <div id="subscribe">
-        <a href="http://feeds.feedburner.com/wekeroad/EeKc" target="_blank">
-        <img src="/content/images/subscribe.png" />
-        </a>
+
     </div>      
     <div id="contact">
-        <a href="/contact">
-        <img src="/content/images/contact.png" />
-        </a>
     </div> 
     
 </div>

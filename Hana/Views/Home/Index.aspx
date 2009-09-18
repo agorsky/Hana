@@ -14,10 +14,11 @@
   <script type="text/javascript">
       function LoadDynamicFeedControl() {
           var feeds = [
-	        { title: 'Twitter',
+	        {
+	            title: 'Twitter',
 	            url: 'http://twitter.com/statuses/user_timeline/5721912.rss'
 	        }
-            ];
+	        ];
           var options = {
  
               stacked: true,
@@ -35,17 +36,17 @@
     <script type="text/javascript" src="http://v6.flickrshow.com/scripts/"></script>
     <div id="feature" class="column span-15 colborder">
         <!--BEGIN FEATURED POST-->
-        <h1>
+        <h2>
             <a href="http://localhost/boppy/?p=1" rel="bookmark" title="Permanent Link to Hello world!"
-                class="title">Lorem ipsum dolor sit amet</a></h1>
+                class="title">Lorem ipsum dolor sit amet</a></h2>
         <p>
             <b>Oct 05, 2008</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam imperdiet ligula. Mauris interdum tincidunt gravida. Pellentesque elementum massa sit amet diam ultricies bibendum. Nulla commodo, purus fringilla dictum laoreet, tellus neque tincidunt libero, sit amet fermentum velit enim a nulla. Maecenas id enim sem. Nunc at tellus et sem bibendum convallis ac nec lorem. Suspendisse potenti. Phasellus non urna nec augue malesuada interdum vitae sed nibh. </p>
     
             <p class="postmetadata"> <a href="http://graphpaperpress.com/demo/modularity/category/arts/" title="View all posts in Arts" rel="category tag">Arts</a>,  <a href="http://graphpaperpress.com/demo/modularity/category/culture/" title="View all posts in Culture" rel="category tag">Culture</a>  | <a href="http://graphpaperpress.com/demo/modularity/2008/10/05/eighth-test-post/#respond" title="Comment on Eighth Test Post">Leave A Comment &#187;</a>  </p> 
 
-        <h1>
+        <h2>
             <a href="http://localhost/boppy/?p=1" rel="bookmark" title="Permanent Link to Hello world!"
-                class="title">Morbi aliquam imperdiet ligula</a></h1>
+                class="title">Morbi aliquam imperdiet ligula</a></h2>
         <p>
             <b>Oct 01, 2008</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam imperdiet ligula. Mauris interdum tincidunt gravida. Pellentesque elementum massa sit amet diam ultricies bibendum. Nulla commodo, purus fringilla dictum laoreet, tellus neque tincidunt libero, sit amet fermentum velit enim a nulla. Maecenas id enim sem. Nunc at tellus et sem bibendum convallis ac nec lorem. Suspendisse potenti. Phasellus non urna nec augue malesuada interdum vitae sed nibh. </p>
     
@@ -70,7 +71,6 @@
     <!-- BOTTOM LEFT FOUR CATEGORY LISTINGS -->
     <div class="column span-7 colborder">
         <div class="five_posts">
-                <h3><a href="http://localhost/boppy/?cat=7">&raquo; SubSonic</a></h3>
                <h6><a href="http://graphpaperpress.com/demo/modularity/2008/10/05/eighth-test-post/" rel="bookmark" title="Permanent Link to Eighth Test Post">Eighth Test Post</a></h6> 
                 <p class="byline">Oct 05, 2008 | <a href="http://graphpaperpress.com/demo/modularity/2008/10/05/eighth-test-post/#respond" title="Comment on Eighth Test Post">Discuss</a></p> 
                 <p>Mauris tristique egestas metus. Etiam interdum. Maecenas pharetra scelerisque nibh! Aliquam erat vol</p> 
@@ -87,9 +87,7 @@
     </div>
     <div class="column span-7 colborder">
         <div class="five_posts">
-                   <h3><a href="http://localhost/boppy/?cat=7">&raquo; Opinions</a></h3>
-
-                    			
+                   			
                     <h6><a href="http://graphpaperpress.com/demo/modularity/2008/10/05/tenth-test-post/" rel="bookmark" title="Permanent Link to Tenth Test Post">Tenth Test Post</a></h6> 
                     <p class="byline">Oct 05, 2008 | <a href="http://graphpaperpress.com/demo/modularity/2008/10/05/tenth-test-post/#comments" title="Comment on Tenth Test Post">4 Comments</a></p> 
                     <p>Nulla faucibus erat non pede. Pellentesque imperdiet, diam ut elementum aliquet, mi felis placerat r</p> 
@@ -110,7 +108,6 @@
     <!-- LAST CATEGORY LISTING - NEEDED TO END CSS COLUMNS -->
     <div class="column span-7 last">
         <div class="five_posts">
-                   <h3><a href="http://localhost/boppy/?cat=7">&raquo; Favorites</a></h3>
 <h6><a href="http://graphpaperpress.com/demo/modularity/2008/10/05/sixth-test-post/" rel="bookmark" title="Permanent Link to Sixth Test Post">Sixth Test Post</a></h6> 
 <p class="byline">Oct 05, 2008 | <a href="http://graphpaperpress.com/demo/modularity/2008/10/05/sixth-test-post/#respond" title="Comment on Sixth Test Post">Discuss</a></p> 
 <p>Nulla faucibus erat non pede. Pellentesque imperdiet, diam ut elementum aliquet, mi felis placerat r</p> 
