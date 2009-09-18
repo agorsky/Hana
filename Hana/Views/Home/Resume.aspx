@@ -6,8 +6,8 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="feature" class="column span-15 colborder">
-        <h3>
-            Rob Conery</h3>
+        <h2>
+            Rob Conery</h2>
         <p class="large">
             I have been working with computers for the last 32 years and I have a passion (bordering
             on obsession) for learning as much as I can about programming them. I am proud to
@@ -29,17 +29,17 @@
             stated that "I'm not a programmer" as I've identified what I do more in terms of
             art, rather than engineering.
         </p>
-        <h3>
-            Skills</h3>
-        <ul>
-            <li>Microsoft Web Stack (ASP/ASP.NET MVC)</li>
-            <li>Ruby On Rails</li>
-            <li>SQL Server, MySQL, SQLite</li>
-            <li>OLAP/Data Mining using Microsoft Analysis Toolset</li>
-            <li>Subversion, Git</li>
-        </ul>
-        <h3>
-            Career History</h3>
+        <h2>
+            Skills</h2>
+            <ul>
+                <li>Microsoft Web Stack (ASP/ASP.NET MVC)</li>
+                <li>Ruby On Rails</li>
+                <li>SQL Server, MySQL, SQLite</li>
+                <li>OLAP/Data Mining using Microsoft Analysis Toolset</li>
+                <li>Subversion, Git</li>
+            </ul>
+        <h2>
+            Career History</h2>
         <div class="section-head">
             Contractor/Senior Program Manager - Microsoft: April 2007 - August, 2009</div>
         <p>
@@ -104,8 +104,8 @@
                 customer calls.
             </ul>
         </p>
-        <h3>
-            Publications</h3>
+        <h2>
+            Publications</h2>
         <div class="section-head">
             <a href="http://www.amazon.com/Professional-ASP-NET-MVC-1-0-Conery/dp/0470384611">Professional
                 ASP.NET MVC 1.0</a> - Lead Author</div>
@@ -120,8 +120,8 @@
             Contributed 8 chapters to this book dealing with various ways to work with the PayPal
             API.
         </p>
-        <h3>
-            Honors</h3>
+        <h2>
+            Honors</h2>
         <div class="section-head">
             Named to <a href="http://codeplex.org" target="_blank">Codeplex Foundation</a> Board
             of Advisors</div>
@@ -142,8 +142,8 @@
         </p>
         <p>
         </p>
-        <h3>
-            Notable Speaking Engagements</h3>
+        <h2>
+            Notable Speaking Engagements</h2>
         <div class="section-head">
             MIX06 - Speaker</div>
         <p>
@@ -169,13 +169,13 @@
         <p>
             Sat on a panel with Phil Haack and Scott Hanselman discussing Open Source and the
             Microsoft platform.</p>
-        <h3>
-            Education</h3>
+        <h2>
+            Education</h2>
         <p>
             UC Santa Barbara, 1992- BS Geological Sciences, minor in Computer Science
         </p>
-        <h3>
-            Interests</h3>
+        <h2>
+            Interests</h2>
         <p>
             I love anything to do with the ocean and the water and I surf as often as I possibly
             can. I am a certified Divemaster (NAUI) and I enjoy all outdoor sports including

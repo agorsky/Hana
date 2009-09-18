@@ -20,32 +20,22 @@
 </head>
 
 <body>
+  
 <div class="container">
+
     <!-- Header -->
-    <div class="column span-24" id="header">
+    <div  id="header">
         <!-- Site Name -->
         <a href="/" title="" class="logo">
-            <img alt="" src="/content/images/logo.png" /></a>
+            <img alt="" src="/content/images/logo2.png" /></a>
     </div>
-    
-    <div id="menu">
-         <div class="menu-item">
-            <a href="/who">who I am</a>
-        </div>
-       
-        <div class="menu-item">
-            <a href="/resume">resume</a>
-        </div>
-        <div class="menu-item">
-            <a href="/tags/subsonic">subsonic</a>
-        </div>
-        <div class="menu-item">
-            <a href="http://tekpub.com" target="_blank">tekpub</a>
-        </div>
-        <div class="menu-item-last">
-            <a href="/contact">contact me</a>
-        </div>
+    <div id="ribbon">
+        <div class="ribbon-text">Volume 111</div>
+        <div class="ribbon-text" style="text-align:center;margin-left:152px;margin-right:62px;">Hanalei, Hawaii <%=DateTime.Now.ToLongDateString() %></div>
+        <div class="ribbon-text">198 Posts, 2020 Comments</div>
+        
     </div>
+
     
     
     <asp:ContentPlaceHolder ID="MainContent" runat="server" />
@@ -54,8 +44,21 @@
     <p>&copy <%=DateTime.Now.Year %> Rob Conery</p>
     </div>
 
-    
+     <div id="subscribe">
+        <a href="http://feeds.feedburner.com/wekeroad/EeKc" target="_blank">
+        <img src="/content/images/subscribe.png" />
+        </a>
+    </div>      
+    <div id="contact">
+        <a href="/contact">
+        <img src="/content/images/contact.png" />
+        </a>
+    </div> 
     
 </div>
+
+
+
+
 </body>
 </html>

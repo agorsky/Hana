@@ -165,17 +165,47 @@ h2 a
 #header
 {
     width: 950px;
-    padding-left: 16px;
-    margin-bottom: 16px;
-    border-bottom-style: double;
-    border-bottom-width: 3px;
-    border-bottom-color: #e5e5e5;
+    text-align:center;
+    margin-bottom:12px;
 }
 #header h1, #header .description
 {
 	padding: 0;
 	margin: 0;
 	line-height: 1em;
+}
+
+#ribbon
+{
+    border-bottom-style: double;
+    border-bottom-width: 3px;
+    border-bottom-color: #e5e5e5;
+    border-top-style: double;
+    border-top-width: 3px;
+    border-top-color: #e5e5e5;
+    height: 22px;
+    margin-bottom: 22px;
+    font-variant: small-caps;
+    font-weight: 500;
+    padding-left: 32px;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.ribbon-text{
+    display:inline;
+}
+
+#contact{
+    position:absolute;
+    top:110px;
+    left:153px;
+}
+
+#subscribe{
+    position:absolute;
+    top:90px;
+    right:133px;
 }
 /* NAVIGATION IN POSTS */
 .entry #nav .content
