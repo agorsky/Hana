@@ -83,6 +83,7 @@
     <Content Include="Content\css\print.css" />
     <Content Include="Content\css\screen.css" />
     <Content Include="Content\images\contact.png" />
+    <Content Include="Content\images\dear.png" />
     <Content Include="Content\images\icons\feed.png" />
     <Content Include="Content\images\icons\feed_small.png" />
     <Content Include="Content\images\icons\li.png" />
@@ -91,8 +92,10 @@
     <Content Include="Content\images\logo2.png" />
     <Content Include="Content\images\opinion.jpg" />
     <Content Include="Content\images\quote.png" />
+    <Content Include="Content\images\regards.png" />
     <Content Include="Content\images\ss_bomb_240.png" />
     <Content Include="Content\images\ss_stripes.png" />
+    <Content Include="Content\images\stamp.jpg" />
     <Content Include="Content\images\subscribe.png" />
     <Content Include="Content\images\SubSonic240.png" />
     <Content Include="Content\images\wave.png" />
