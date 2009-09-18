@@ -72,6 +72,7 @@
     <Content Include="Content\css\lib\ie.css" />
     <Content Include="Content\css\lib\reset.css" />
     <Content Include="Content\css\lib\typography.css" />
+    <Content Include="Content\css\newsfeed.css" />
     <Content Include="Content\css\plugins\buttons\buttons.css" />
     <Content Include="Content\css\plugins\buttons\icons\cross.png" />
     <Content Include="Content\css\plugins\buttons\icons\key.png" />

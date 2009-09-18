@@ -136,7 +136,7 @@ h2 a
 #feature h3{margin-bottom:16px;}
 
 
-#home_right { padding: 0; }
+#home_right { padding: 0; margin-bottom:16px;}
 #home_right .entry { padding: 0 0 2em 0; }
 .author
 {

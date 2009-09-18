@@ -5,6 +5,32 @@
 </asp:Content>
 
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAXDxCekvc3BRLZSw2AaTpVhRk2KHjkhDr-AinWwGiTLTg4BpP1RQkA87A7cGo2bXtxIFVC9ui4LIlSw"></script>
+  <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+    type="text/javascript"></script>
+  <style type="text/css">
+    @import url("/content/css/newsfeed.css");
+  </style>
+  <script type="text/javascript">
+      function LoadDynamicFeedControl() {
+          var feeds = [
+	        { title: 'Twitter',
+	            url: 'http://twitter.com/statuses/user_timeline/5721912.rss'
+	        }
+            ];
+          var options = {
+ 
+              stacked: true,
+              horizontal: false,
+              numResults: 5
+          }
+          new GFdynamicFeedControl(feeds, 'twitter', options);
+      }
+      // Load the feeds API and set the onload callback.
+      google.load('feeds', '1');
+      google.setOnLoadCallback(LoadDynamicFeedControl);
+  </script>
+
     <!--START LEFT SIDE-->
     <script type="text/javascript" src="http://v6.flickrshow.com/scripts/"></script>
     <div id="feature" class="column span-15 colborder">
@@ -33,16 +59,9 @@
     <div class="column span-8 last">
         <div id="home_right">
             <h3>Twitter</h3>
-            <ul >
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-           </ul>
+            <div id="twitter" name="twitter"></div>
            <h3>Pix</h3>
-           <iframe align="center" src="http://www.flickr.com/slideShow/index.gne?user_id=91469966@N00&" frameBorder="0" width="350" scrolling="no" height="300"></iframe>
+           <iframe align="center" src="http://www.flickr.com/slideShow/index.gne?user_id=91469966@N00&" frameBorder="0" width="300" scrolling="no" height="250"></iframe>
        </div>
     </div>
     
