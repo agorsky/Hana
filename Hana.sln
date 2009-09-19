@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hana", "Hana\Hana.csproj", "{79B9F1F4-3F1B-45A4-9735-C9DB69EDE41B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hana.Specs", "Hana.Specs\Hana.Specs.csproj", "{C9A9B476-AD45-4299-9643-F068D8305421}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{79B9F1F4-3F1B-45A4-9735-C9DB69EDE41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79B9F1F4-3F1B-45A4-9735-C9DB69EDE41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79B9F1F4-3F1B-45A4-9735-C9DB69EDE41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A9B476-AD45-4299-9643-F068D8305421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A9B476-AD45-4299-9643-F068D8305421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A9B476-AD45-4299-9643-F068D8305421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A9B476-AD45-4299-9643-F068D8305421}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

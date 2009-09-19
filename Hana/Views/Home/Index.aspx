@@ -37,7 +37,7 @@
     <div id="feature" class="column span-15 colborder">
         <!--BEGIN FEATURED POST-->
         <h2>
-            <a href="http://localhost/boppy/?p=1" rel="bookmark" title="Permanent Link to Hello world!"
+            <a href="/posts" rel="bookmark" title="Permanent Link to Hello world!"
                 class="title">Lorem ipsum dolor sit amet</a></h2>
         <p>
             <b>Oct 05, 2008</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam imperdiet ligula. Mauris interdum tincidunt gravida. Pellentesque elementum massa sit amet diam ultricies bibendum. Nulla commodo, purus fringilla dictum laoreet, tellus neque tincidunt libero, sit amet fermentum velit enim a nulla. Maecenas id enim sem. Nunc at tellus et sem bibendum convallis ac nec lorem. Suspendisse potenti. Phasellus non urna nec augue malesuada interdum vitae sed nibh. </p>
@@ -45,7 +45,7 @@
             <p class="postmetadata"> <a href="http://graphpaperpress.com/demo/modularity/category/arts/" title="View all posts in Arts" rel="category tag">Arts</a>,  <a href="http://graphpaperpress.com/demo/modularity/category/culture/" title="View all posts in Culture" rel="category tag">Culture</a>  | <a href="http://graphpaperpress.com/demo/modularity/2008/10/05/eighth-test-post/#respond" title="Comment on Eighth Test Post">Leave A Comment &#187;</a>  </p> 
 
         <h2>
-            <a href="http://localhost/boppy/?p=1" rel="bookmark" title="Permanent Link to Hello world!"
+            <a href=/posts" rel="bookmark" title="Permanent Link to Hello world!"
                 class="title">Morbi aliquam imperdiet ligula</a></h2>
         <p>
             <b>Oct 01, 2008</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam imperdiet ligula. Mauris interdum tincidunt gravida. Pellentesque elementum massa sit amet diam ultricies bibendum. Nulla commodo, purus fringilla dictum laoreet, tellus neque tincidunt libero, sit amet fermentum velit enim a nulla. Maecenas id enim sem. Nunc at tellus et sem bibendum convallis ac nec lorem. Suspendisse potenti. Phasellus non urna nec augue malesuada interdum vitae sed nibh. </p>
