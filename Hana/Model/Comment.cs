@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using SubSonic.SqlGeneration.Schema;
 
 namespace Hana.Model {
 
@@ -11,17 +12,17 @@ namespace Hana.Model {
         MarkedAsSpam,
         NotScanned
     }
-    
+
+    [SubSonicTableNameOverride("wp_comments")]
     public class Comment {
 
         public Comment() {
             Status = CommentStatus.NotScanned;
-            ID = Guid.NewGuid();
             CreatedAt = DateTime.Now;
         }
 
 
-        public Comment(Guid postID, string author, string email, string url, string body):this() {
+        public Comment(int postID, string author, string email, string url, string body):this() {
             Author = author;
             Email = email;
             this.AuthorUrl = url;
@@ -35,8 +36,8 @@ namespace Hana.Model {
 
         public int ReplyTo { get; set; }
 
-        public Guid ID { get; set; }
-        public Guid PostID { get; set; }
+        public int ID { get; set; }
+        public int PostID { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
         public string Email { get; set; }

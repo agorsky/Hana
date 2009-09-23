@@ -47,10 +47,18 @@ namespace Hana.Specs {
 
 
     [Subject("New Post")]
-    public class creating_with_no_info_supplied : with_null_post {
+    public class when_creating : with_null_post {
 
         Because of = () => {
             post = new Post();
+        };
+        It should_default_published_date_to_now = () => {
+            post.PublishedAt.ShouldBeGreaterThan(DateTime.Now.AddSeconds(-1));
+            post.PublishedAt.ShouldBeLessThan(DateTime.Now.AddSeconds(1));
+
+        };
+        It should_default_status_to_draft = () => {
+            post.Status.ShouldEqual(PostStatus.Draft);
         };
 
         It should_be_instantiated = () => {
@@ -64,9 +72,7 @@ namespace Hana.Specs {
             post.PublishedAt.ShouldBeGreaterThan(DateTime.Now.AddSeconds(-1));
             post.PublishedAt.ShouldBeLessThan(DateTime.Now.AddSeconds(1));
         };
-        It should_have_status_draft = () => {
-            post.Status.ShouldEqual(PostStatus.Draft);
-        };
+
         It should_have_new_Guid_as_ID = () => {
             post.ID.ShouldNotEqual(Guid.Empty);
         };
@@ -146,9 +152,6 @@ namespace Hana.Specs {
         It should_have_same_hash_code_as_ID = () => {
             post.GetHashCode().ShouldEqual(post.ID.GetHashCode());
         };
-
-
-
     }
 
 

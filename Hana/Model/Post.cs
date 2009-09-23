@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using SubSonic.Extensions;
 using System.Text.RegularExpressions;
-
+using SubSonic.SqlGeneration.Schema;
 namespace Hana.Model {
 
     public enum PostStatus {
@@ -12,7 +12,7 @@ namespace Hana.Model {
         Published,
         Offline
     }
-
+    [SubSonicTableNameOverride("wp_posts")]
     public class Post {
 
         public Post(string author, string title, string body):this() {
@@ -24,7 +24,7 @@ namespace Hana.Model {
         }
 
         public Post() {
-            ID = Guid.NewGuid();
+            
             Title = "";
             Slug = "";
             Body = "";
@@ -39,7 +39,7 @@ namespace Hana.Model {
             Categories = new List<Category>();
         }
 
-        public Guid ID { get; set; }
+        public int ID { get; set; }
         public string Title { get; set; }
         public string Slug { get; set; }
         public string Body { get; set; }

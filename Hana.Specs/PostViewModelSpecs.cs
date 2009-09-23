@@ -90,7 +90,7 @@ namespace Hana.Specs {
             var p = new Post();
             var list=new List<Post>();
             list.Add(p);
-            post = new PostViewModel(100,1000,list,list,list,null);
+            post = new PostViewModel(100,1000,list.AsQueryable(),list.AsQueryable(),list.AsQueryable(),null);
         };
 
     }

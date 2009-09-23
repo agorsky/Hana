@@ -21,11 +21,18 @@
 
 </div>
 <div class="column span-7 last">
-    <h3>Right Side</h3>
-     <p>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut mauris nec ipsum volutpat hendrerit. Etiam mollis ultrices enim nec pulvinar. Vestibulum vitae eros ligula, eu aliquet lorem. Proin quis turpis vitae mauris feugiat pretium. Maecenas vestibulum blandit est ac faucibus
-     </p>
-      <h3>Right Side</h3>
+    <p>
+    <div id="adzerk">
+        <div id="adzerk_ad_div">
+            <script type="text/javascript" src="http://engine.theloungenet.com/Server/DOTNET/RCONERY/VERT"></script>
+        </div>
+        <p id="adzerk_by">
+            <a href='http://theloungenet.com'>Ads by The Lounge</a>
+        </p>
+    </div>
+    </p>
+    <p>
+    <h3>Related</h3>
      <p>
         <ul>
         <li>Lorem ipsum dolor sit amet</li>

@@ -38,7 +38,7 @@ namespace Hana.Specs {
     public class when_created_with_details : with_null_comment {
 
         Because of = () => {
-            comment = new Comment(Guid.NewGuid(),"Author","Email","URL","Body");
+            comment = new Comment(1,"Author","Email","URL","Body");
         };
 
         It should_not_be_null = () => {
@@ -66,7 +66,7 @@ namespace Hana.Specs {
     public class base_properties : with_null_comment {
         static Comment comment2;
         Because of = () => {
-            var postID = Guid.NewGuid();
+            var postID = 1;
             comment = new Comment(postID,"Author", "Email", "URL", "Body");
             comment2 = new Comment(postID,"Author", "Email", "URL", "Body");
         };

@@ -59,9 +59,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Machine.Specifications.NUnit.dll</HintPath>
     </Reference>
-    <Reference Include="Moq, Version=2.0.2991.26580, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+    <Reference Include="Moq, Version=3.1.416.3, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\Moq.dll</HintPath>
+      <HintPath>..\lib\Moq.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -100,8 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentSpecs.cs" />
-    <Compile Include="DB4O.cs" />
-    <Compile Include="ObjectRepository.cs" />
+    <Compile Include="PostServiceSpecs.cs" />
     <Compile Include="PostSpecs.cs" />
     <Compile Include="PostViewModelSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,10 +112,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Content Include="Report.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

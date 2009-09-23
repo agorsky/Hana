@@ -6,18 +6,49 @@ using SubSonic.Extensions;
 namespace Hana.Model {
     public class PostViewModel {
 
-        public PostViewModel(int totalPosts, 
-            int totalComments, 
-            IList<Post> featured, 
-            IList<Post> subsonic, 
-            IList<Post> opinion, 
-            IList<Comment> comments) {
+        public PostViewModel(Post selectedPost, IEnumerable<Post> related, int totalPosts, int totalComments) {
             TotalPosts = totalPosts;
             TotalComments = totalComments;
-            FeaturePosts = featured ?? new List<Post>();
-            SubSonicPosts = subsonic ?? new List<Post>();
-            OpinionPosts = opinion ?? new List<Post>();
-            RecentComments = comments ?? new List<Comment>();
+            SelectedPost = selectedPost;
+            if (related != null)
+                Related = related.Take(5).ToList();
+            else
+                Related = new List<Post>();
+
+        }
+
+        public PostViewModel(int totalPosts, 
+            int totalComments, 
+            IEnumerable<Post> featured,
+            IEnumerable<Post> subsonic,
+            IEnumerable<Post> opinion,
+            IEnumerable<Comment> comments) {
+            TotalPosts = totalPosts;
+            TotalComments = totalComments;
+
+            if (featured != null)
+                FeaturePosts = featured.OrderByDescending(x => x.PublishedAt).Take(2).ToList();
+            else
+                FeaturePosts = new List<Post>();
+
+
+            if (subsonic != null)
+                SubSonicPosts = subsonic.OrderByDescending(x => x.PublishedAt).Take(5).ToList();
+            else
+                SubSonicPosts = new List<Post>();
+
+
+            if (opinion != null)
+                OpinionPosts = opinion.OrderByDescending(x => x.PublishedAt).Take(5).ToList();
+            else
+                OpinionPosts = new List<Post>();
+
+
+            if (comments != null)
+                RecentComments = comments.OrderByDescending(x => x.CreatedAt).Take(5).ToList();
+            else
+                RecentComments = new List<Comment>();
+
         }
 
         public int TotalPosts { get; set; }
@@ -41,6 +72,7 @@ namespace Hana.Model {
         public IList<Post> SubSonicPosts { get; set; }
         public IList<Post> OpinionPosts { get; set; }
         public IList<Comment> RecentComments { get; set; }
+        public IList<Post> Related { get; set; }
         public Post SelectedPost { get; set; }
 
 
